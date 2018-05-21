@@ -1,0 +1,41 @@
+<mat-card class="chaos">
+	<header>
+		<div style="text-align: center">
+			<img src="assets/chaospurple.png">
+		</div>
+		<mat-toolbar>
+			<button color="primary" mat-button>Schedule</button>
+			<mat-divider [vertical]="true"></mat-divider>
+			<button color="accent" mat-button>Roster</button>
+			<mat-divider [vertical]="true"></mat-divider>
+			<button mat-button>Archive</button>
+		</mat-toolbar>
+	</header>
+	<main>
+		<slideshow #slideshow
+			[height]="height"
+			[minHeight]="'280px'"
+			[autoPlay]="true"
+			[showArrows]="false"
+			[imageUrls]="images"
+			[lazyLoad]="images?.length > 1"
+			[autoPlayWaitForLazyLoad]="true">
+		</slideshow>
+	</main>
+	<footer>f</footer>
+	<mat-card color="primary" class="chaos-feed">
+		<div class="chaos-feed-header">Upcoming Events</div>
+		<div class="chaos-feed-list">
+			<mat-list dense>
+				<mat-list-item *ngFor="let feed of feeds">
+					<div matLine>
+						{{ feed.type }} {{ feed.date }}
+					</div>
+					<div matLine>
+						{{ feed.message }}
+					</div>
+				</mat-list-item>
+			</mat-list>
+		</div>
+	</mat-card>
+</mat-card>

@@ -1,0 +1,52 @@
+.chaos {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color:#ded7e0;
+    width:800px;
+    margin:0 auto;
+    padding: 0;
+    position: relative;
+    header, main, footer {
+        flex-shrink: 0;
+    }
+    header {
+        background-color: #cccccc;
+    }
+    main {
+        flex-grow: 1;
+        overflow: auto;
+    }
+    footer {
+        background-color: chocolate;
+    }
+    .mat-toolbar-single-row {
+        height: 36px;
+        text-align: center;
+    }
+    .chaos-feed {
+        position: absolute;
+        top:64px;
+        right:-205px;
+        width: 200px;
+        height:400px;
+        background-color: blueviolet;
+        padding:5px 0 5px 0;
+        mat-list-item {
+            border-top:1px solid #e7e7e7;
+            background-color: white;
+        }
+        .chaos-feed-list {
+            overflow: auto;
+			height:calc(100% - 22px);
+			.mat-list[dense] .mat-list-item.mat-2-line {
+				height:42px;
+			}
+        }
+        .chaos-feed-header {
+			color: white;
+			padding-left:10px;
+        }
+    }
+}
