@@ -5,8 +5,9 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatListModule } from "@angular/material/list";
+import {MatChipsModule} from "@angular/material/chips";
 
-import {GalleriaModule} from 'primeng/galleria';
+import {GalleriaModule} from "primeng/galleria";
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import {GalleriaModule} from 'primeng/galleria';
     MatButtonModule,
     MatDividerModule,
     MatListModule,
+    MatChipsModule,
     GalleriaModule
   ],
   exports: [
@@ -23,6 +25,7 @@ import {GalleriaModule} from 'primeng/galleria';
     MatButtonModule,
     MatDividerModule,
     MatListModule,
+    MatChipsModule,
     GalleriaModule
   ]
 })

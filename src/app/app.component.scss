@@ -37,16 +37,26 @@
             border-top:1px solid #e7e7e7;
             background-color: white;
         }
-        .chaos-feed-list {
-            overflow: auto;
-			height:calc(100% - 22px);
-			.mat-list[dense] .mat-list-item.mat-2-line {
-				height:42px;
-			}
+        .chaos-feed-list-container {
+            background-color: white;
+            height: calc(100% - 23px);
+            .chaos-feed-list {
+                overflow: auto;
+                height:100%;
+                .chaos-feed-list-type {
+                    border-radius: 7px;
+                    background-color: lightskyblue;
+                    padding: 0 4px;
+                }
+                .mat-list[dense] .mat-list-item.mat-2-line {
+                    height:42px;
+                }
+            }
         }
         .chaos-feed-header {
 			color: white;
-			padding-left:10px;
+            padding-left:10px;
+            padding-bottom:4px;
         }
     }
 }
