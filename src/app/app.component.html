@@ -1,9 +1,9 @@
-<mat-card class="chaos">
+<div class="chaos">
 	<header>
 		<div style="text-align: center">
 			<img src="assets/chaospurple.png">
 		</div>
-		<mat-toolbar>
+		<mat-toolbar *ngIf="false">
 			<button color="primary" mat-button>Schedule</button>
 			<mat-divider [vertical]="true"></mat-divider>
 			<button color="accent" mat-button>Players/Alumni</button>
@@ -24,16 +24,21 @@
 		<div class="chaos-feed-list-container">
 			<div class="chaos-feed-list">
 				<mat-list dense>
-					<mat-list-item *ngFor="let feed of feeds">
+					<mat-list-item *ngFor="let feed of feeds | greaterThanDate">
 						<div matLine>
-							<span class="chaos-feed-list-type">{{ feed.type | titlecase }}</span> {{ feed.date }}
+							<span class="chaos-feed-list-type" [class.chaos-feed-list-type-tournament]="feed.type === 'tournament'">{{ feed.type | titlecase }}</span> {{ feed.date }}
 						</div>
 						<div matLine>
+							<span *ngIf="feed.type === 'practice'; else tournamentLink">
 							{{ feed.message }}
+							</span>
+							<ng-template #tournamentLink>
+								<a href="{{ feed.url }}" target="_blank">{{ feed.message}}</a>
+							</ng-template>
 						</div>
 					</mat-list-item>
 				</mat-list>
 			</div>
 		</div>
 	</mat-card>
-</mat-card>
+</div>

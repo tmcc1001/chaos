@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    background-color:#ded7e0;
     width:800px;
     margin:0 auto;
     padding: 0;
@@ -12,7 +11,7 @@
         flex-shrink: 0;
     }
     header {
-        background-color: #cccccc;
+        margin-bottom:10px;
     }
     main {
         flex-grow: 1;
@@ -27,7 +26,7 @@
     }
     .chaos-feed {
         position: absolute;
-        top:64px;
+        top:128px;
         right:-205px;
         width: 200px;
         height:400px;
@@ -47,6 +46,9 @@
                     border-radius: 7px;
                     background-color: lightskyblue;
                     padding: 0 4px;
+                }
+                .chaos-feed-list-type-tournament {
+                    background-color: tomato;
                 }
                 .mat-list[dense] .mat-list-item.mat-2-line {
                     height:42px;
