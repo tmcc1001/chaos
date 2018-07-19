@@ -1,4 +1,127 @@
 .chaos {
+    display:grid;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-template-rows: 80px auto 26px;
+    grid-template-areas: 
+        "y header x"
+        "y main aside"
+        "y footer z";
+    height:100%;
+    width:100%;
+}
+.chaos-header {
+    grid-area: header;
+    background: #fff;
+}
+.chaos-main {
+    grid-area: main;
+    background: #fff;
+}
+.chaos-footer {
+    color:#4527a0;
+    grid-area: footer;
+    background: #fff;
+}
+.chaos-aside {
+    grid-area: aside;
+    padding:0 5px;
+}
+.chaos-main-image-holder {
+    width:100%;
+    height:200px;
+    overflow: hidden;
+    position: relative;
+}
+.chaos-main-image-text-outer {
+}
+.chaos-main-image-text {
+    z-index: 6;
+    position: absolute;
+    font-size: 36pt;
+    color:#f7f7f7;
+    border:1px solid #4527a0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.chaos-main-image {
+    width:100%;
+    margin: -100px 0 0 0;
+    -webkit-filter: grayscale(100%) brightness(49%) sepia(100%) hue-rotate(-145deg) saturate(700%) contrast(0.8);
+    filter: grayscale(100%) brightness(49%) sepia(100%) hue-rotate(-145deg) saturate(700%) contrast(0.8);
+}
+.chaos-aside-header {
+    color:#ffffff;
+    text-align: center;
+}
+.chaos-aside-container {
+    width:100%;
+    height:400px;
+    background-color: #4527a0;
+    padding:5px 1px;
+
+}
+.chaos-aside-events {
+    background-color: #ffffff;
+    height:calc(100% - 21px);
+}
+.chaos-aside-event {
+    
+}
+
+
+/* header */
+/* aside */
+.chaos-feed {
+    height:400px;
+    max-width:220px;
+    background-color: #4527a0;
+    padding:5px 0 5px 0;
+    mat-list-item {
+        border-top:1px solid #e7e7e7;
+        background-color: white;
+    }
+    .chaos-feed-list-container {
+        background-color: white;
+        height: calc(100% - 23px);
+        .chaos-feed-list {
+            overflow: auto;
+            height:100%;
+            .chaos-feed-list-type {
+                border-radius: 7px;
+                background-color: lightskyblue;
+                padding: 0 4px;
+            }
+            .chaos-feed-list-type-tournament {
+                background-color: tomato;
+            }
+            .mat-list[dense] .mat-list-item.mat-2-line {
+                height:42px;
+            }
+        }
+    }
+    .chaos-feed-header {
+        color: white;
+        padding-left:10px;
+        padding-bottom:4px;
+    }
+}
+/* footer */
+footer {
+    text-align: center;
+    color:#ffffff;
+    font-size: 10pt;
+    mat-icon {
+        position: relative;
+        top:2px;
+        font-size:10pt;
+    }
+}
+
+
+/*
+.chaos {
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -12,53 +135,32 @@
     }
     header {
         margin-bottom:10px;
+        position: relative;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .chaos-header-logo {
+            position: absolute;
+            top:5px;
+            left:0;
+            z-index:5;
+            background: #ffffff;
+            border-radius: 12px;
+            img {
+                width:200px;
+            }
+        }
+        mat-toolbar {
+            float:right;
+        }
     }
     main {
         flex-grow: 1;
         overflow: auto;
     }
-    footer {
-        background-color: chocolate;
-    }
     .mat-toolbar-single-row {
         height: 36px;
         text-align: center;
     }
-    .chaos-feed {
-        position: absolute;
-        top:128px;
-        right:-205px;
-        width: 200px;
-        height:400px;
-        background-color: blueviolet;
-        padding:5px 0 5px 0;
-        mat-list-item {
-            border-top:1px solid #e7e7e7;
-            background-color: white;
-        }
-        .chaos-feed-list-container {
-            background-color: white;
-            height: calc(100% - 23px);
-            .chaos-feed-list {
-                overflow: auto;
-                height:100%;
-                .chaos-feed-list-type {
-                    border-radius: 7px;
-                    background-color: lightskyblue;
-                    padding: 0 4px;
-                }
-                .chaos-feed-list-type-tournament {
-                    background-color: tomato;
-                }
-                .mat-list[dense] .mat-list-item.mat-2-line {
-                    height:42px;
-                }
-            }
-        }
-        .chaos-feed-header {
-			color: white;
-            padding-left:10px;
-            padding-bottom:4px;
-        }
-    }
 }
+*/

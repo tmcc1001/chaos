@@ -1,44 +1,48 @@
 <div class="chaos">
-	<header>
-		<div style="text-align: center">
-			<img src="assets/chaospurple.png">
-		</div>
-		<mat-toolbar *ngIf="false">
-			<button color="primary" mat-button>Schedule</button>
-			<mat-divider [vertical]="true"></mat-divider>
-			<button color="accent" mat-button>Players/Alumni</button>
-			<mat-divider [vertical]="true"></mat-divider>
-			<button color="accent" mat-button>Calendar</button>
-			<mat-divider [vertical]="true"></mat-divider>
-			<button color="accent" mat-button>Front Office</button>
-			<mat-divider [vertical]="true"></mat-divider>
-			<button mat-button>Archive</button>
-		</mat-toolbar>
+	<header class="chaos-header">
+		<chaos-header></chaos-header>
 	</header>
-	<main>
+	<main class="chaos-main">
 		<router-outlet></router-outlet>
 	</main>
-	<footer>f</footer>
-	<mat-card color="primary" class="chaos-feed">
-		<div class="chaos-feed-header">Upcoming Events</div>
-		<div class="chaos-feed-list-container">
-			<div class="chaos-feed-list">
-				<mat-list dense>
-					<mat-list-item *ngFor="let feed of feeds | greaterThanDate">
-						<div matLine>
-							<span class="chaos-feed-list-type" [class.chaos-feed-list-type-tournament]="feed.type === 'tournament'">{{ feed.type | titlecase }}</span> {{ feed.date }}
-						</div>
-						<div matLine>
-							<span *ngIf="feed.type === 'practice'; else tournamentLink">
-							{{ feed.message }}
-							</span>
-							<ng-template #tournamentLink>
-								<a href="{{ feed.url }}" target="_blank">{{ feed.message}}</a>
-							</ng-template>
-						</div>
-					</mat-list-item>
-				</mat-list>
+	<footer class="chaos-footer">
+		<mat-icon>copyright</mat-icon>2018 Chaos Fastpitch, All Rights Reserved
+	</footer>
+	<aside class="chaos-aside">
+		<div class="chaos-feed">
+			<div class="chaos-feed-header">Upcoming Events</div>
+			<div class="chaos-feed-list-container">
+				<div class="chaos-feed-list">
+					<mat-list dense>
+						<mat-list-item *ngFor="let feed of feeds | greaterThanDate">
+							<div matLine>
+								<span class="chaos-feed-list-type" [class.chaos-feed-list-type-tournament]="feed.type === 'tournament'">{{ feed.type | titlecase }}</span> {{ feed.date }}
+							</div>
+							<div matLine>
+								<span *ngIf="feed.type === 'practice'; else tournamentLink">
+								{{ feed.message }}
+								</span>
+								<ng-template #tournamentLink>
+									<a href="{{ feed.url }}" target="_blank">{{ feed.message}}</a>
+								</ng-template>
+							</div>
+						</mat-list-item>
+					</mat-list>
+				</div>
 			</div>
 		</div>
-	</mat-card>
+	</aside>
 </div>
+		
+
+
+
+
+
+
+
+
+
+
+
+

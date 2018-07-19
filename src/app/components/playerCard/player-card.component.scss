@@ -1,0 +1,74 @@
+.chaos-player-card {
+    width:144px;
+    height:174px;
+    background-color:#ccc;
+    padding:5px;
+    padding-top:25px;
+    position: relative;
+}
+.chaos-player-outer-frame {
+    width: calc(100% - 5px);
+    height:calc(100% - 5px);
+    background-color:#4527a0;
+    border-radius:6px;
+    padding:3px;
+    position: relative;
+    z-index: 100;
+}
+.chaos-player-inner-frame {
+    width: 100%;
+    height:calc(100% - 30px);
+    background-color:#fff;
+    border-radius:6px;
+    position: relative;
+    background-size: 140px 140px;
+}
+.chaos-player-img {
+    width:140px;
+    height:140px;
+    position: absolute;
+    z-index: 50;
+    top:0;
+    left:0;
+}
+.chaos-card-info {
+    position: relative;
+}
+.chaos-card-info-name {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color:#f7f7f7;
+}
+.chaos-card-info-position {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:#ddd;
+    font-size:8pt;
+}
+.chaos-card-info-chip > span {
+    display: inline-block;
+    padding-top:3px;
+    font-size: 11pt;
+}
+.chaos-card-info-chip {
+    position: absolute;
+    top:8px;
+    left:0;
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ddd;
+    font-weight: bold;
+}
+.chaos-player-logo {
+    position: absolute;
+    top:1px;
+    width:80px;
+    height:24px;
+    left:40px;
+}
+
+

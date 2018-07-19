@@ -1,0 +1,36 @@
+.chaos-header-body {
+    height:80px;
+    display: grid;
+    grid-template-columns: 205px auto 90px 90px 90px 90px 90px;
+    width:100%;
+}
+.chaos-header-section-link {
+    height:80px;
+    width:90px;
+    text-align:center;
+    font-size: 18px;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.chaos-header-section-link:hover {
+    background-color:#4527a0;
+    color: #f7f7f7;
+    opacity: 1;
+}
+.chaos-header-link-selected {
+    background-color:#4527a0;
+    color: #f7f7f7;
+    opacity: 1;
+}
+.chaos-header-section-link > span {
+    padding-top:30px;
+    display: inline-block;
+}
+.chaos-header-logo {
+    height:60px;
+    margin-top:10px;
+    width:205px;
+}

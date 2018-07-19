@@ -1,0 +1,16 @@
+<mat-tab-group>
+    <mat-tab label="Current">
+        <div *ngFor="let player of players | isActive: true" style="float:left;padding:13px;">
+            <chaos-player-card [player]="player"></chaos-player-card>
+        </div>
+    </mat-tab>
+    <mat-tab label="Past">
+        <div *ngFor="let player of players | isActive: false" style="float:left;padding:13px;">
+            <chaos-player-card [player]="player"></chaos-player-card>
+        </div>
+    </mat-tab>
+  </mat-tab-group>
+
+
+
+

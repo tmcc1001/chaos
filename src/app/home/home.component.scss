@@ -1,0 +1,40 @@
+.chaos-flex-split {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-top:10px;
+	height: calc(100% - 351px);
+    .chaos-flex-item {
+		width:calc(50% - 5px);
+		height:100%;
+		mat-card {
+			height:100%;
+			padding-top:0;
+			mat-card-title {
+				color:#4527a0;
+			}
+			.chaos-home-item {
+				font-size: 10pt;
+			}
+			h3 {
+				margin: 5px 5px 5px -10px;
+
+			}
+		}
+    }
+}
+.chaos-section-header {
+	color:#4527a0;
+	font-size:28pt;
+}
+.chaos-image-responsive {
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+.chaos-chloe-background {
+	background-image: url("/assets/images/chloe-square.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
