@@ -23,14 +23,14 @@ export class RosterComponent implements OnInit {
     this.players.push({ nickName: "Cali", lastName: "Thornton", position: "2nd Base", photo: "assets/players/cali.png", number: "18", size: "YM", active: true });
     this.players.push({ nickName: "Lexi", lastName: "Chambers", position: "2nd Base", photo: "assets/players/lexi.png", number: "11", size: "YM", active: false });
     this.players.push({ nickName: "McKenzie", lastName: "Lange", position: "1st Base", photo: "assets/players/mckenzie.png", number: "5", size: "YL", active: false });
-    this.players.push({ nickName: "Olivia", lastName: "Friel", position: "1st Base", photo: "assets/players/noPhoto.png", number: "", size: "", active: true });
-    this.players.push({ nickName: "Emma", lastName: "Huffman", position: "2nd Base", photo: "assets/players/noPhoto.png", number: "", size: "", active: true });
-    this.players.push({ nickName: "Madison", lastName: "Bailey", position: "Shortstop", photo: "assets/players/noPhoto.png", number: "", size: "", active: true });
-    this.players.push({ nickName: "Brianna", lastName: "Bailey", position: "Pitcher", photo: "assets/players/noPhoto.png", number: "", size: "", active: true });
-    this.players.push({ nickName: "Lillian", lastName: "Hash-Mercer", position: "Outfield", photo: "assets/players/noPhoto.png", number: "", size: "", active: true });
-    this.players.push({ nickName: "Brylyn", lastName: "Miller", position: "3rd Base", photo: "assets/players/noPhoto.png", number: "", size: "", active: true });
-    this.players.push({ nickName: "Alivia", lastName: "Fernandez", position: "2nd Base", photo: "assets/players/noPhoto.png", number: "", size: "", active: true });
-    this.players.push({ nickName: "Claire", lastName: "McGee", position: "Outfield", photo: "assets/players/noPhoto.png", number: "", size: "", active: true });
+    this.players.push({ nickName: "Olivia", lastName: "Friel", position: "1st Base", photo: "assets/players/olivia.png", number: "4", size: "", active: true });
+    this.players.push({ nickName: "Emma", lastName: "Huffman", position: "2nd Base", photo: "assets/players/emma.png", number: "1", size: "", active: true });
+    this.players.push({ nickName: "Madison", lastName: "Bailey", position: "Shortstop", photo: "assets/players/noPhoto.png", number: "7", size: "", active: false });
+    this.players.push({ nickName: "Brianna", lastName: "Bailey", position: "Pitcher", photo: "assets/players/noPhoto.png", number: "6", size: "", active: false });
+    this.players.push({ nickName: "Lillian", lastName: "Hash-Mercer", position: "Outfield", photo: "assets/players/noPhoto.png", number: "2", size: "", active: false });
+    this.players.push({ nickName: "Brylyn", lastName: "Miller", position: "3rd Base", photo: "assets/players/brylyn.png", number: "21", size: "", active: true });
+    this.players.push({ nickName: "Alivia", lastName: "Fernandez", position: "2nd Base", photo: "assets/players/alivia.png", number: "2", size: "", active: true });
+    this.players.push({ nickName: "Claire", lastName: "McGee", position: "Outfield", photo: "assets/players/noPhoto.png", number: "17", size: "", active: false });
     this.players.push({ nickName: "Amani", lastName: "Bennett", position: "Catcher", photo: "assets/players/amani.png", number: "99", size: "YL", active: false });
   }
 

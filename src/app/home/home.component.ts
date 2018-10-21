@@ -16,11 +16,11 @@ export class HomeComponent implements OnInit {
 
 	ngOnInit() {
 		this.images = [];
-        this.images.push('assets/images/galleria/180-kylahit.png');
+    this.images.push('assets/images/team-9-22-18.jpg');
+    this.images.push('assets/images/galleria/180-kylahit.png');
         this.images.push('assets/images/galleria/180-chloeaction.png');
         this.images.push('assets/images/galleria/180-gabby.png');
         this.images.push('assets/images/galleria/180-teaganthrow.png');
-        this.images.push('assets/images/galleria/180-teampic.png');
         // this.images.push({source:'assets/images/galleria/kylahit.png', alt:'Description for Image 1', title:'Title 1'});
         // this.images.push({source:'assets/images/galleria/amaniaction.png', alt:'Description for Image 1', title:'Title 1'});
         // this.images.push({source:'assets/images/galleria/chloeaction.png', alt:'Description for Image 1', title:'Title 1'});

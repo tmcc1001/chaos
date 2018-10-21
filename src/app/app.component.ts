@@ -11,24 +11,22 @@ export class AppComponent implements OnInit {
 	public feeds = [];
 
 	constructor() {
-		this.feeds.push({type: "practice", date: "7/16/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "7/17/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "7/19/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "tournament", date: "7/21/18", time: "8am", message: "The Bats Are Hot!!", url: "http://fastpitchorlando.com/TTContent.aspx?tid=TZ3966&tab=1"});
-		this.feeds.push({type: "practice", date: "7/24/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "7/26/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "7/30/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "7/31/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "8/2/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "8/6/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "8/8/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "8/9/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "tournament", date: "8/11/18", time: "8am", message: "Back To School Bash", url: "http://fastpitchorlando.com/TTContent.aspx?tid=TZ3972&tab=1"});
-		this.feeds.push({type: "practice", date: "8/14/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "8/16/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "8/20/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "8/21/18", time: "6pm", message: "Practice at Carter rd."});
-		this.feeds.push({type: "practice", date: "8/23/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "9/25/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "9/27/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "10/2/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "10/4/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "tournament", date: "10/6/18", time: "8am", message: "Columbus Day Adventure", url: "http://fastpitchorlando.com/TTApply0.aspx?tid=TZ3977&express=Y&year=2018"});
+		this.feeds.push({type: "practice", date: "10/11/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "10/16/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "10/18/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "10/23/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "10/25/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "tournament", date: "10/27/18", time: "8am", message: "Witch's Brew Spell-A-Thon", url: "http://fastpitchorlando.com/TTApply0.aspx?tid=TZ3980&express=Y&year=2018"});
+		this.feeds.push({type: "practice", date: "11/1/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "11/6/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "11/8/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "11/13/18", time: "6pm", message: "Practice at Carter rd."});
+		this.feeds.push({type: "practice", date: "11/15/18", time: "6pm", message: "Practice at Carter rd."});
 	}
 
 	ngOnInit() {
